@@ -1,2 +1,10 @@
 function add(a, b) { return a + b; }
-module.exports = { add };
+
+function login(username, password) {
+  if (username === 'admin' && password === '1234') {
+    return 'Login Successful';
+  }
+  return 'Invalid Credentials';
+}
+
+module.exports = { add, login };
